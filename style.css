@@ -17,6 +17,17 @@ header {
     width: 100%;
 }
 
+.navigation_menu ul{
+    display: flex;
+    flex-direction: row;
+    font-family: 'ralewaymedium';
+    text-transform: uppercase;
+    color: #e2574c;
+    font-size: 0.8rem;
+    margin-right: 5%;
+    display: inline-block;
+}
+
 .header .logo {
     width: 116px;
 }
@@ -107,6 +118,54 @@ header {
     display: block;
 }
 
+/* Box Icon Section*/ 
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    flex: 1 0 200px;
+     height: 200px;
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+}
+
+.men_category{
+    width: 50%;
+    height: 100;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
+  url("assets/images/wave-bkgd.jpg");
+}
+
+.trends_category{
+    width: 25%;
+    height: auto;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
+  url("assets/images/trends-category.jpg");
+}
+.glasses_category{
+       width: 25%;
+       height: auto;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
+  url("assets/images/glasses-category.jpg");
+}
+
+.sale_category{
+    width: 25%;
+    height: auto;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
+  url("assets/images/sale-category.jpg");}
+
+.bags_category{
+    width: 25%;
+    height: auto;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
+  url("assets/images/bags-category.jpg");}
+
+
+.womens_category{
+     width: 50%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
+  url("assets/images/womens-categoryjpg");}
 
 /* Most Loved Banner */
 
@@ -114,7 +173,6 @@ header {
     text-align: center;
     padding-top: 16px;
     padding-bottom: 33px;
-    display: flex;
 }
 
 
@@ -127,13 +185,24 @@ header {
     overflow: hidden;
 }
 
+.carousel{
+    width: 100%;
+    background-color:white;
+    height: 400px;
+    margin-top: 10px;
+}
+
+.carousel_cell{
+    width: 25%;
+}
+
 .featured p {
-    color: #e2574c;
-    font-family: 'playfair_displayregular';
-    line-height: 1.25;
-    text-align: center;
-    font-size: 1.1875rem;
-    margin: 10px;
+   color: #e2574c;
+   font-family: 'playfair_displayregular';
+   line-height: 1.25;
+   text-align: center;
+   font-size: 1rem;
+   margin: 10px;
 }
 
 .featured h5 {
@@ -143,19 +212,6 @@ header {
     text-align: center;
     font-size: 0.75rem;
 }
-
-.featured ul {
-    padding-top: 38px;
-    display: flex;
-}
-
-.featured li {
-    justify-content: center;
-    display: inline-block;
-    width: 25%;
-    flex-direction: row;
-}
-
 
 /* Subscribe button */
 
@@ -213,7 +269,7 @@ button {
 }
 
 #text_wrapper {
-    width: 41%;
+    width: 31%;
     height: 40px;
     position: relative;
     border: 6px solid white;
@@ -236,7 +292,6 @@ footer {
 /* Footer Address */
 
 .about {
-    margin-left: 6%;
     font-size: 1rem;
     line-height: 1.25;
     font-family: 'playfair_displayregular', sans-serif;
@@ -269,7 +324,7 @@ footer {
     align-items: flex-end;
     transform: translate(0, 47%);
     margin-right: 6%;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .social a {
@@ -286,7 +341,7 @@ footer {
 }
 
 .fa {
-    font-size: 16px;
+    font-size: 1rem;
     color: white;
     margin-right: 10px;
 }

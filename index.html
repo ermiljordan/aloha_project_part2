@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="resetstyle.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="flickity-docs.css" media="screen">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,6 +15,14 @@
         <div class=container>
             <div class="logo">
                 <img src="assets/images/aloha-logo.svg" alt="aloha_logo" style="width: 150px" />
+            </div>
+            <div class="navigation_menu">
+                <ul>
+                    <li>About</li>
+                    <li>Shop</li>
+                    <li>Featured</li>
+                    <li>Updates</li>
+                </ul>
             </div>
             <div class="cart">
                 <img src="assets/images/cart-icon.svg" alt="cart_icon" style="width: 60px" />
@@ -33,40 +42,91 @@
             <br> current selection of products or sign-up for updates below.</span>
     </section>
 
+    <section class="categories">
+        <div class="men_category"> mens
+            <a href="http://www.w3schools.com"></a>
+        </div>
+        <div class="trends_category"> trends
+            <a href="http://www.w3schools.com"></a>
+        </div>
+        <div class="glasses_category"> glasses
+            <a href="http://www.w3schools.com"></a>
+        </div>
+        <div class="sale_category"> sale
+            <a href="http://www.w3schools.com"></a>
+        </div>
+        <div class="bags_category"> bags
+            <a href="http://www.w3schools.com"></a>
+        </div>
+        <div class="womens_category"> womens
+            <a href="http://www.w3schools.com"></a>
+        </div>
+    </section>
+
     <section class="featured">
         <div class="container1">
             <span class="most_loved"> Most-Loved</span>
             <span class="products"> Products </span>
-            <ul>
-                <li>
-                    <img class=featured_dress src="assets/images/stretch-knit-dress.jpg" alt="stretch_knit_dress" style="width: 240px" />
+            <div class="carousel" data-flickity='{"autoPlay": 2000, "freeScroll": true, "contain": true, "prevNextButtons": false}'>
+                <div class="carousel_cell">
+                    <img class=f eatured_dress src="assets/images/stretch-knit-dress.jpg" style="width: 240px" />
                     <h5>DRESSES</h5>
                     <p>Stretch Knit Dress</p>
                     <h5>$169.00</h5>
-                </li>
+                </div>
 
-                <li>
-                    <img src="assets/images/cotton-blue-shirt.jpg" alt="cotton_blue_shirt" style="width: 240px" />
+                <div class="carousel_cell">
+                    <img src="assets/images/cotton-blue-shirt.jpg" style="width: 240px" />
                     <h5>SHIRTS</h5>
                     <p>Cotton Blue Shirt</p>
                     <h5>$89.00</h5>
-                </li>
+                </div>
 
-                <li>
-                    <img src="assets/images/checked-stretch-dress.jpg" alt="checked_stretch_dress" style="width: 240px" />
+                <div class="carousel_cell">
+                    <img src="assets/images/checked-stretch-dress.jpg" style="width: 240px" />
                     <h5>DRESSES</h5>
                     <p>Checked Stretch Dress</p>
                     <h5>$129.00</h5>
-                </li>
+                </div>
 
-                <li>
-                    <img src="assets/images/blue-hipster-backpack.jpg" alt="blue_hipster_backpack" style="width: 240px" />
+                <div class="carousel_cell">
+                    <img src="assets/images/blue-hipster-backpack.jpg" style="width: 240px" />
                     <h5>BAGS</h5>
                     <p>Blue Hipster Backpack</p>
                     <h5>$69.00</h5>
-                </li>
-            </ul>
-        </div>
+                </div>
+
+                <div class="carousel_cell">
+                    <img src="assets/images/demin-overall-shorts.jpg" style="width: 240px" />
+                    <h5>DEMIN</h5>
+                    <p>Demin Overall Shorts</p>
+                    <h5>$89.00</h5>
+                </div>
+
+                <div class="carousel_cell">
+                    <img src="assets/images/pink-dotted-dress.jpg" style="width: 240px" />
+                    <h5>DRESSES</h5>
+                    <p>Pink Dotted Dress</p>
+                    <h5>$99.00</h5>
+                    </li>
+                </div>
+
+                <div class="carousel_cell">
+                    <img src="assets/images/blue-silk-dress.jpg" style="width: 240px" />
+                    <h5>DRESSES</h5>
+                    <p>Blue Silk Dress</p>
+                    <h5>$119.00</h5>
+                    </li>
+                </div>
+
+                <div class="carousel_cell">
+                    <img src="assets/images/cotton-yellow-tshirt.jpg" style="width: 240px" />
+                    <h5>SHIRTS</h5>
+                    <p>Cotton Yellow Shirt</p>
+                    <h5>$39.00</h5>
+                    </li>
+                </div>
+            </div>
     </section>
     <section class="subscribe clearfix">
         <div class="subscribe-text-container">
@@ -114,5 +174,7 @@
         </ul>
     </footer>
 </body>
+<script src="jquery-3.1.1.min.js "></script>
+<script src="flickity-docs.min.js "></script>
 
 </html>
