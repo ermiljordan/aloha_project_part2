@@ -571,10 +571,6 @@ body {
 html { font-size: 17px; }
 html.export { font-size: 15px; }
 
-a {
-  color: #6A6;
-  text-decoration: none;
-}
 
 a:hover {
   color: #E90;

@@ -17,14 +17,18 @@ header {
     width: 100%;
 }
 
-.navigation_menu ul{
+
+.navigation_menu{
     display: flex;
-    flex-direction: row;
+    align-self: center;
+    flex: 1 0 auto;
+}
+.navigation_menu ul {
+    
     font-family: 'ralewaymedium';
     text-transform: uppercase;
     color: #e2574c;
     font-size: 0.8rem;
-    margin-right: 5%;
     display: inline-block;
 }
 
@@ -33,7 +37,6 @@ header {
 }
 
 .header .cart {
-    text-align: right;
     margin-right: 3%;
     width: 44px;
 }
@@ -84,7 +87,6 @@ header {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 30px;
-    border-bottom: 2px solid #d7d7d7;
     padding: 50px;
 }
 
@@ -94,7 +96,7 @@ header {
 .hand_crafted,
 .most_loved,
 .signupfor {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: 'playfair_displayitalic';
     color: #2d2d2d;
     margin-right: 10px;
@@ -118,54 +120,78 @@ header {
     display: block;
 }
 
-/* Box Icon Section*/ 
-.categories{
+
+/* Box Icon Section*/
+
+.categories {
     display: flex;
     flex-wrap: wrap;
     text-transform: uppercase;
-    flex: 1 0 200px;
-     height: 200px;
-  border-right: 4px solid white;
-  border-bottom: 4px solid white;
+    text-align: center;
+    height: 700px;
+    font-color: white;
+    font-size: 1rem;
+    box-sizing: border-box;
+    padding-bottom: 5%;
 }
 
-.men_category{
+.men_category {
     width: 50%;
     height: 100;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
-  url("assets/images/wave-bkgd.jpg");
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('assets/images/mens-category.jpg') no-repeat center center;
+    background-size: cover, cover;
+    border-left: 0;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    flex: 2 0 50%;
 }
 
-.trends_category{
+.trends_category {
     width: 25%;
     height: auto;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
-  url("assets/images/trends-category.jpg");
-}
-.glasses_category{
-       width: 25%;
-       height: auto;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
-  url("assets/images/glasses-category.jpg");
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('assets/images/trends-category.jpg') no-repeat center center;
+    background-size: cover, cover;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
 }
 
-.sale_category{
+.glasses_category {
     width: 25%;
     height: auto;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
-  url("assets/images/sale-category.jpg");}
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('assets/images/glasses-category.jpg') no-repeat center center;
+    background-size: cover, cover;
+    border-left: 4px solid white;
+    border-bottom: 4px solid white;
+}
 
-.bags_category{
+.sale_category {
     width: 25%;
     height: auto;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
-  url("assets/images/bags-category.jpg");}
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("assets/images/sale-category.jpg") no-repeat center center;
+    background-size: cover, cover;
+    border-top: 4px solid white;
+    border-right: 4px solid white;
+}
 
+.bags_category {
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('assets/images/bags-category.jpg') no-repeat center center;
+    background-size: cover, cover;
+    width: 25%;
+    height: auto;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    border-top: 4px solid white;
+}
 
-.womens_category{
-     width: 50%;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%),
-  url("assets/images/womens-categoryjpg");}
+.womens_category {
+    width: 50%;
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('assets/images/womens-category.jpg') no-repeat center center;
+    background-size: cover, cover;
+    border-left: 4px solid white;
+    border-top: 4px solid white;
+}
+
 
 /* Most Loved Banner */
 
@@ -185,24 +211,24 @@ header {
     overflow: hidden;
 }
 
-.carousel{
+.carousel {
     width: 100%;
-    background-color:white;
-    height: 400px;
+    background-color: white;
+    height: 350px;
     margin-top: 10px;
 }
 
-.carousel_cell{
+.carousel_cell {
     width: 25%;
 }
 
 .featured p {
-   color: #e2574c;
-   font-family: 'playfair_displayregular';
-   line-height: 1.25;
-   text-align: center;
-   font-size: 1rem;
-   margin: 10px;
+    color: #e2574c;
+    font-family: 'playfair_displayregular';
+    line-height: 1.25;
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px;
 }
 
 .featured h5 {
@@ -212,6 +238,7 @@ header {
     text-align: center;
     font-size: 0.75rem;
 }
+
 
 /* Subscribe button */
 
@@ -299,6 +326,7 @@ footer {
     text-align: left;
     width: 100%;
     transform: translate(0, 60%);
+    margin-left: 6%;
 }
 
 .copyright,
@@ -329,14 +357,17 @@ footer {
 
 .social a {
     color: white;
-    text-decoration: none;
     font-family: 'ralewaylight';
     line-height: 29px;
+    text-align: left;
 }
 
 .social li:hover a,
 .social li:hover i {
-    text-decoration: none;
+    color: red;
+}
+
+a:hover {
     color: red;
 }
 
@@ -356,6 +387,10 @@ img {
 
 ul {
     list-style: none;
+}
+
+html {
+    font-size: 16px;
 }
 
 
