@@ -1,4 +1,4 @@
-;
+/* FOUND THIS ONLINE */
 (function ($) {
     var h = $.scrollTo = function (a, b, c) {
         $(window).scrollTo(a, b, c)
